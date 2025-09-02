@@ -15,6 +15,10 @@ async function generatePrompt(prompt) {
   const response = await ai.models.generateContent({
     model: "gemini-2.5-flash",
     contents: formattedHistory,
+    config: {
+      systemInstruction:
+        "You are a helpful AI assistant. Always give direct, concise answers to the user’s questions. Do not over-explain or yap Summarize the response clearly and include relevant emojis to make it engaging. Keep your answers short, structured, and straight to the point",
+    },
   });
 
   const reply = response.text;
