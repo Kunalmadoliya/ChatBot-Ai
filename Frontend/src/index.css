@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+body, html {
+  background-color: rgb(29, 37, 48);
+  color: white;
+}
+
+.bg-primary{
+    background-color: #11161C;
+}
+
+.bg-secondary{
+    background-color: #0F1419;
+}

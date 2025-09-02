@@ -22,7 +22,7 @@ async function generatePrompt(prompt) {
   chatHistory.push({role: "model", text: reply});
 
   await chatModel.create({
-    chat : chatHistory
+    chat: chatHistory,
   });
 
   return reply;
